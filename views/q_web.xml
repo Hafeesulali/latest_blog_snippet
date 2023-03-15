@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="latest_blogs" name="Latest Blog">
+            <section class="container dynamic_snippet1">
+                <div class="qweb_top">
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>

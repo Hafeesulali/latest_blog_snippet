@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<template id="snippet_id" name="Latest Blog" xml:space="preserve">
+    <t t-name="latest_blog.snippet">
+        <div class="container">
+            <h1 style="text-align: center;">Latest Four Blogs</h1>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <t t-foreach="result" t-as="res">
+                    <div class="card col1" >
+                        <a t-attf-href="/blog/{{res[3]}}/{{res[2]}}">
+                        <img t-attrf-src="/website_blog/static/src/img/cover_{{res[1]}}.jpg" class="card-img-top" alt="not found"
+                              style="height:250px; width:250px;" onerror="this.src='/latest_blog/static/src/img/placeholder.png';"/>
+                        <div class="card-body">
+                            <h5 class="card-title"><t t-esc="res[0]"/></h5>
+                        </div>
+                        </a>
+                    </div>
+                </t>
+            </div>
+        </div>
+        <br/>
+    </t>
+</template>
+
+
